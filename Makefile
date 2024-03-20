@@ -1,3 +1,7 @@
+
+start:
+	npm run dev
+
 add:
 	git status
 	git add .
