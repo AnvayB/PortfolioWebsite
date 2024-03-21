@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { ArrowRightCircle } from 'react-bootstrap-icons'
 import headerImg from '../assets/img/header-img.svg'
+import './Banner.css'
 
 function Banner() {
 
@@ -53,7 +54,8 @@ function Banner() {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>{`Hi I'm Anvay`} 
-            {/* <span className="wrap">{text}</span> */}
+            <br />
+            <h3 className="wrap">{text}</h3>
             </h1>
             <p>About yourself section</p>
             <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25}/></button>
