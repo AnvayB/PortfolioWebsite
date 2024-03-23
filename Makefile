@@ -1,6 +1,6 @@
 
 start:
-	npm run dev
+	npm run start
 
 add:
 	git status
