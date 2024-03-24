@@ -41,8 +41,8 @@ span.navbar-text {
 }
 
 .social-icon a {
-  width: 42px;
-  height: 42px;
+  width: 43px;
+  height: 43px;
   background: rgba(217, 217, 217, 0.1);
   display: inline-flex;
   border-radius: 50%;
@@ -51,6 +51,11 @@ span.navbar-text {
   justify-content: center;
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.social-icon a .linkedin {
+  bottom: 10px;
+  border: red solid 10px;
 }
 
 .social-icon a::before {
@@ -69,9 +74,15 @@ span.navbar-text {
 }
 
 .social-icon a img {
-  width: 40%;
+  width: 50%;
   z-index: 1;
   transition: 0.3s ease-in-out;
+}
+.social-icon .github{
+  width: 60%;
+}
+.social-icon .resume{
+  width: 60%;
 }
 
 .social-icon a:hover img {
