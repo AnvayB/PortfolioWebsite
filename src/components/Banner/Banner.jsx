@@ -10,9 +10,10 @@ function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  // const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(200);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Software Engineer", "Frontend Engineer", "Web Developer" ];
   const period = 2000;
 
   
@@ -61,7 +62,7 @@ function Banner() {
                 <h1>{`Hi! I'm Anvay Bhanap`} <br />
                 <h3 className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></h3>
                 </h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>I’m a software engineer from San Jose State University with a passion for developing engaging applications. Since graduating, I’ve completed freelance work primarily focused in Frontend and Web Development. I'm constantly driven to explore cutting-edge technologies and frameworks to enhance user experiences and deliver genuinely enjoyable and fulfilling interactions. I’m currently upgrading my skills in Full-Stack through various certifications with an active interest in securing job opportunities and eagerly seeking projects to further develop my expertise.</p>
                   <button onClick={() => console.log('connect')}>Let&apos;s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
