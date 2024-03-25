@@ -1,54 +1,75 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import cmlogo from '../../assets/img/cmlogo.png'
-import fclogo from "../../assets/img/fclogo.png";
-import rm from "../../assets/img/rm.png";
-import slc from "../../assets/img/successLC.png";
-import prismatic from "../../assets/img/prismatic.png";
+// import cmlogo from '../../assets/img/cmlogo.png'
+// import fclogo from "../../assets/img/fclogo.png";
+// import rm from "../../assets/img/rm.png";
+// import slc from "../../assets/img/successLC.png";
+// import prismatic from "../../assets/img/prismatic.png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Projects.css'
+import { workexp, projects, reviews } from "../../data";
 
 function Projects() {
 
-  const workexp = [
-    {
-      title: "CHYK West",
-      description: "Lead Developer",
-      imgUrl: cmlogo,
-      duration: "Jun. 2023 - Present",
-      link: "https://chykwest.org/"
-    },
-    {
-      title: "FiduciaryChat",
-      description: "WordPress Developer",
-      imgUrl: fclogo,
-      duration: "May 2023 - Aug. 2023",
-      link: "https://anvayb.github.io/FiduciaryChat/"
-    },
-    {
-      title: "Prismatic Softwares",
-      description: "Web Development Intern",
-      imgUrl: prismatic,
-      duration: "Jun. 2022 - Aug. 2022",
-      link: "https://www.prissoft.net/"
-    },
-    {
-      title: "RippleMatch",
-      description: "Leadership Development Intern",
-      imgUrl: rm,
-      duration: "Jan. 2021 - Apr. 2021",
-      link: "https://ripplematch.com/"
-    },
-    {
-      title: "Success Learning Center",
-      description: "Math and English Tutor",
-      imgUrl: slc,
-      duration: "Jan. 2018 - Jun. 2018",
-      link: "http://cliveden.com/"
-    },
-  ];
+  // const workexp = [
+  //   {
+  //     title: "CHYK West",
+  //     description: "Lead Developer",
+  //     imgUrl: cmlogo,
+  //     duration: "Jun. 2023 - Present",
+  //     link: "https://chykwest.org/"
+  //   },
+  //   {
+  //     title: "FiduciaryChat",
+  //     description: "WordPress Developer",
+  //     imgUrl: fclogo,
+  //     duration: "May 2023 - Aug. 2023",
+  //     link: "https://anvayb.github.io/FiduciaryChat/"
+  //   },
+  //   {
+  //     title: "Prismatic Softwares",
+  //     description: "Web Development Intern",
+  //     imgUrl: prismatic,
+  //     duration: "Jun. 2022 - Aug. 2022",
+  //     link: "https://www.prissoft.net/"
+  //   },
+  //   {
+  //     title: "RippleMatch",
+  //     description: "Leadership Development Intern",
+  //     imgUrl: rm,
+  //     duration: "Jan. 2021 - Apr. 2021",
+  //     link: "https://ripplematch.com/"
+  //   },
+  //   {
+  //     title: "Success Learning Center",
+  //     description: "Math and English Tutor",
+  //     imgUrl: slc,
+  //     duration: "Jan. 2018 - Jun. 2018",
+  //     link: "http://cliveden.com/"
+  //   },
+  // ];
+
+  // const projects = [
+  //   {
+  //     title: "",
+  //     description: "",
+  //     imgUrl: ,
+  //     duration: "",
+  //     link: ""
+  //   },
+  // ]
+
+  // const reviews = [
+  //   {
+  //     title: "",
+  //     description: "",
+  //     imgUrl: ,
+  //     link: "" read more?
+  //   },
+  // ]
+
 
   return (
     <section className="project" id="projects">
@@ -91,11 +112,35 @@ function Projects() {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                    <Row>
+                        {
+                          projects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                                // just make these sections taller
+                                // tbh just copy the entire block from the og website for now
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, 3ligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Row>
+                        {
+                          reviews.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
