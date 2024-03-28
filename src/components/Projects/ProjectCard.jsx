@@ -2,7 +2,7 @@ import { Col } from "react-bootstrap";
 import PropTypes from "prop-types";
 
 
-function ProjectCard({ title, description, imgUrl, duration, link }) {
+function ProjectCard({ title, description, imgUrl, duration, link, stack }) {
   return (
     <Col size={12} sm={6} md={4}>
       <a href={link} target="_blank" rel="noopener noreferrer">
@@ -10,7 +10,10 @@ function ProjectCard({ title, description, imgUrl, duration, link }) {
           <img src={imgUrl} />
           <div className="proj-txtx">
             <h4>{title}</h4>
-            <span>{description}</span>
+            <span><i>{description}</i> <br /> 
+            <sub>{stack}</sub>
+            </span>
+            <p></p>
             <p>{duration}</p>
           </div>
         </div>
@@ -27,4 +30,6 @@ ProjectCard.propTypes = {
   imgUrl: PropTypes.string.isRequired,
   duration: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  stack: PropTypes.string.isRequired,
+
 };
