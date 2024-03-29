@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../../assets/img/logo.svg';
-import navIcon1 from '../../assets/img/nav-icon1.svg';
-import navIcon2 from '../../assets/img/nav-icon2.svg';
-import navIcon3 from '../../assets/img/nav-icon3.svg';
+import linkedin from "../../assets/img/linkedin.svg";
+import github from "../../assets/img/github.svg";
+import resume from "../../assets/img/resume.svg";
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 import './NavBar.css'
@@ -49,9 +49,9 @@ function NavBar() {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/anvayb/" className="linkedin"><img src={navIcon1} alt="LinkedIn" /></a>
-                <a href="https://github.com/AnvayB"><img src={navIcon2} alt="GitHub" className="github" /></a>
-                <a href="https://anvayb.netlify.app/static/media/Anvay_Bhanap_Resume.f5eab86dd348779ff17a.pdf"><img src={navIcon3} alt="Resume" className="resume" /></a>
+                <a href="https://www.linkedin.com/in/anvayb/" className="linkedin"><img src={linkedin} alt="LinkedIn" /></a>
+                <a href="https://github.com/AnvayB"><img src={github} alt="GitHub" className="github" /></a>
+                <a href="https://anvayb.netlify.app/static/media/Anvay_Bhanap_Resume.f5eab86dd348779ff17a.pdf"><img src={resume} alt="Resume" className="resume" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
