@@ -1,8 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 import logo from "../../assets/img/logo.svg";
-import navIcon1 from "../../assets/img/nav-icon1.svg";
-import navIcon2 from "../../assets/img/nav-icon2.svg";
-import navIcon3 from "../../assets/img/nav-icon3.svg";
+import linkedin from "../../assets/img/linkedin.svg";
+import github from "../../assets/img/github.svg";
+import resume from "../../assets/img/resume.svg";
 import './Footer.css'
 
 function Footer() {
@@ -11,15 +11,14 @@ function Footer() {
       <Container>
         <Row className="content">
           <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
+            <a href="#top"><img src={logo} alt="Logo" /></a>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/anvayb/"><img src={linkedin} alt="LinkedIn" /></a>
+              <a href="https://github.com/AnvayB"><img src={github} alt="GitHub" /></a>
+              <a href="https://anvayb.netlify.app/static/media/Anvay_Bhanap_Resume.f5eab86dd348779ff17a.pdf"><img src={resume} alt="Resume" /></a>
             </div>
-            {/* <p>Copyright 2022. All Rights Reserved</p> */}
           </Col>
         </Row>
       </Container>
