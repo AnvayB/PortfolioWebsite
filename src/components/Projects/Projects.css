@@ -15,10 +15,16 @@
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
+  margin: 10px auto 20px auto;
   text-align: center;
   width: 56%;
 }
+
+p .stack {
+  color: white;
+}
+
+
 
 .project .nav.nav-pills {
   width: 72%;
@@ -130,8 +136,25 @@
   color: white;
 }
 
+.proj-txtx a{
+  display: inline-block;
+  /* overflow: hidden; */
+
+}
+
+.proj-txtx h3 {
+  /* width: fit-content; */
+  position: relative;
+  top: 40px;
+  /* font-size: 30px; */
+  /* font-weight: 700; */
+  /* letter-spacing: 0.8px; */
+  /* line-height: 1.1em; */
+  color: white;
+}
+
 .proj-txtx span {
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.8px;
