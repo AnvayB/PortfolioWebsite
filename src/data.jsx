@@ -10,6 +10,7 @@ import isky from "./assets/img/isky.png";
 import hrportal from "./assets/img/hrportal.png";
 import cc from "./assets/img/codecocktails.png";
 import bookshelf from './assets/img/bookshelf.png'
+import chatbot from './assets/img/gpt-chatbot.png'
 
 // Reviews
 import prismaticreview from './assets/img/pm-review.png'
@@ -69,19 +70,20 @@ export const projects = [
   },
   // Add portfolio as a project when complete
   {
+    title: "GPT-Chatbot",
+    description: "Modifiable OpenAI Chatbot",
+    stack: "React, OpenAI API",
+    image: chatbot,
+    duration: "Feb 2024 - Present",
+    link: "https://github.com/AnvayB/GPT-Chatbot"
+  },
+  {
     title: "Clim8",
     description: "Weather app",
     image: clim8,
     stack: "React, weather API",
     duration: "Jan. 2024 - Present",
     link: "https://clim8.netlify.app/"
-  },
-  {
-    title: "GPT-Chatbot",
-    description: "",
-    image: "",
-    duration: "",
-    link: ""
   },
   {
     title: "HR Portal",
@@ -118,7 +120,6 @@ export const reviews = [
     image: prismaticreview,
     recs: "https://www.linkedin.com/in/anvayb/details/recommendations/",
     readmore: "Read More",
-    link: "" //read more?
   },
   {
     title: "Diego Fierst Garcia",
@@ -128,7 +129,5 @@ export const reviews = [
     image: rmreview,
     recs: "https://www.linkedin.com/in/anvayb/details/recommendations/",
     readmore: "Read More",
-
-    link: "" //read more?
   },
 ]
