@@ -5,6 +5,8 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Banner.css'
+import { HashLink } from 'react-router-hash-link';
+
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -82,7 +84,9 @@ function Banner() {
                     <h3 className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></h3>
                   </h1>
                   <p>I’m a software engineer from San Jose State University with a passion for developing engaging applications. Since graduating, I’ve completed freelance work primarily focused in Frontend and Web Development. I'm constantly driven to explore cutting-edge technologies and frameworks to enhance user experiences and deliver genuinely enjoyable and fulfilling interactions. I’m currently upgrading my skills in Full-Stack through various certifications with an active interest in securing job opportunities and eagerly seeking projects to further develop my expertise.</p>
-                  <button onClick={() => console.log('connect')}>Let&apos;s Connect <ArrowRightCircle size={25} /></button>
+                  <a href="#connect" style={{ textDecoration: "none" }}>
+                    <button onClick={() => console.log('connect')}>Let&apos;s Connect <ArrowRightCircle size={25} /></button>
+                  </a>
                 </div>}
             </TrackVisibility>
           </Col>

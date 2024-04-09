@@ -1,6 +1,6 @@
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 200px 0 200px 0;
 }
 
 .contact img {
@@ -82,4 +82,30 @@
 
 .contact form button:hover::before {
   width: 100%;
+}
+/* ------------------------------------------------------ */
+.footer {
+  padding: 0 0 50px 0;
+  background-image: url('../../assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer img {
+  width: 26%;
+}
+
+.footer .content{
+  align-items: center;
+  position: relative;
+  bottom: 30px;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
 }
