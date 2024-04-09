@@ -1,17 +1,17 @@
-import meter1 from "../../assets/img/meter1.svg";
-import meter2 from "../../assets/img/meter2.svg";
-import meter3 from "../../assets/img/meter3.svg";
+// import meter1 from "../../assets/img/meter1.svg";
+// import meter2 from "../../assets/img/meter2.svg";
+// import meter3 from "../../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 // import arrow1 from "../assets/img/arrow1.svg";
 // import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../../assets/img/color-sharp.png"
+import ProgressBar from "./ProgressBar";
 import './Skills.css'
 
 function Skills() {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -31,36 +31,103 @@ function Skills() {
 
   return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p> */}
-                        <br />
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                        </Carousel>
-                    </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>Skills</h2>
+              {/*  */}
+              <br />
+              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                <div className="item">
+                  <ProgressBar
+                    className="bar"
+                    bgcolor="green"
+                    progress="85"
+                    height={30}
+                  />
+                  <h5>React</h5>
+                  <p>+ HTML, CSS, JavaScript</p>
                 </div>
+                <div className="item">
+                <ProgressBar
+                    className="bar"
+                    bgcolor="#d1e231"
+                    progress="75"
+                    height={30}
+                  />
+                  <h5>MERN Stack </h5>
+                  <p> MongoDB, Express, React, Node </p>
+                </div>
+                <div className="item">
+                <ProgressBar
+                    className="bar"
+                    bgcolor="#d1e231"
+                    progress="60"
+                    height={30}
+                  />
+                  <h5>Python</h5>
+                </div>
+                <div className="item">
+                <ProgressBar
+                    className="bar"
+                    bgcolor="green"
+                    progress="85"
+                    height={30}
+                  />
+                  <h5>Git/GitHub</h5>
+                </div>
+                <div className="item">
+                <ProgressBar
+                    className="bar"
+                    bgcolor="#d1e231"
+                    progress="65"
+                    height={30}
+                  />
+                  <h5>Postman</h5>
+                </div>
+                <div className="item">
+                <ProgressBar
+                    className="bar"
+                    bgcolor="green"
+                    progress="83"
+                    height={30}
+                  />
+                  <h5>WordPress</h5>
+                </div>
+                <div className="item">
+                <ProgressBar
+                    className="bar"
+                    bgcolor="green"
+                    progress="80"
+                    height={30}
+                  />
+                  <h5>Adobe Photoshop</h5>
+                </div>
+                <div className="item">
+                <ProgressBar
+                    className="bar"
+                    bgcolor="green"
+                    progress="80"
+                    height={30}
+                  />
+                  <h5>Responsive Design <br />& Accessibility</h5>
+                </div>
+                <div className="item">
+                <ProgressBar
+                    className="bar"
+                    bgcolor="green"
+                    progress="90"
+                    height={30}
+                  />
+                  <h5>Communcation <br />& Teamwork</h5>
+                </div>
+              </Carousel>
             </div>
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }
