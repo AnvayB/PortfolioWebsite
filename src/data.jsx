@@ -11,13 +11,9 @@ import hrportal from "./assets/img/hrportal.png";
 import cc from "./assets/img/codecocktails.png";
 import bookshelf from './assets/img/bookshelf.png'
 import chatbot from './assets/img/gpt-chatbot.png'
-
 // Reviews
 import prismaticreview from './assets/img/pm-review.png'
 import rmreview from './assets/img/rm-review.png'
-
-
-
 
 
 export const workexp = [
