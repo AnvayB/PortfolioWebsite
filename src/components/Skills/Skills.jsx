@@ -94,7 +94,7 @@ function Skills() {
                     height={30}
                   />
                   <h5>WordPress</h5>
-                  <p>+ Plugin Integration</p>
+                  <p>+ Plugin Integrations</p>
                 </div>
                 <div className="item">
                 <ProgressBar

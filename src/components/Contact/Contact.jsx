@@ -70,7 +70,7 @@ function Contact() {
 
   return (
     <section className="contact" id="connect">
-      <Container>
+      <Container className="connect">
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
