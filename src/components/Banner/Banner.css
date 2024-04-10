@@ -1,7 +1,14 @@
+/* gradient:
+dark: #463e6f
+light: #ba6780
+*/
+
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('../../assets/img/banner-bg.png');
+  /* background-image: url('../../assets/img/banner-bg.png'); */
+  background-image: url('../../assets/img/bg1.jpeg');
+
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,6 +17,7 @@
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
+  border-radius: 15px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -28,7 +36,8 @@
 }
 
 .banner p {
-  color: #B8B8B8;
+  /* color: #B8B8B8; */
+  color: whitesmoke;
   font-size: 18px;
   /* letter-spacing: 0.8px; */
   line-height: 1.5em;
@@ -36,7 +45,8 @@
 }
 
 .banner button {
-  color: #fff;
+  /* color: #fff; */
+  color: #fbedc9;
   font-weight: 700;
   font-size: 20px;
   margin-top: 20px;
