@@ -5,6 +5,8 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Banner.css'
+import { HashLink } from 'react-router-hash-link';
+
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -13,10 +15,24 @@ function Banner() {
   // const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [delta, setDelta] = useState(200);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Engineer", "Frontend Engineer", "Web Developer" ];
+  const toRotate = ["Software Engineer", "Frontend Engineer", "Web Developer"];
   const period = 2000;
+  // 
+  const [hasAnimatedPortfolio, setHasAnimatedPortfolio] = useState(false);
+  const [hasAnimatedProfile, setHasAnimatedProfile] = useState(false);
 
-  
+  const checkAnimationTriggered = (elementId) => {
+    const hasAnimated = sessionStorage.getItem(`hasAnimated_${elementId}`);
+    return hasAnimated;
+  };
+
+  useEffect(() => {
+    setHasAnimatedPortfolio(checkAnimationTriggered('portfolio'));
+    setHasAnimatedProfile(checkAnimationTriggered('profile'));
+  }, []);
+  // 
+
+
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -50,6 +66,8 @@ function Banner() {
     }
   }
 
+
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -57,20 +75,28 @@ function Banner() {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Anvay Bhanap`} <br />
-                <h3 className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></h3>
-                </h1>
+                <div className={isVisible && !hasAnimatedPortfolio ? "animate__animated animate__fadeIn" : ""} onAnimationEnd={() => {
+                  sessionStorage.setItem('hasAnimated_portfolio', 'true');
+                  setHasAnimatedPortfolio(true);
+                }}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Anvay Bhanap`} <br />
+                    <h3 className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></h3>
+                  </h1>
                   <p>I’m a software engineer from San Jose State University with a passion for developing engaging applications. Since graduating, I’ve completed freelance work primarily focused in Frontend and Web Development. I'm constantly driven to explore cutting-edge technologies and frameworks to enhance user experiences and deliver genuinely enjoyable and fulfilling interactions. I’m currently upgrading my skills in Full-Stack through various certifications with an active interest in securing job opportunities and eagerly seeking projects to further develop my expertise.</p>
-                  <button onClick={() => console.log('connect')}>Let&apos;s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                  <a href="#connect" style={{ textDecoration: "none" }}>
+                    <button onClick={() => console.log('connect')}>Let&apos;s Connect <ArrowRightCircle size={25} /></button>
+                  </a>
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div className={isVisible && !hasAnimatedProfile ? "animate__animated animate__zoomIn" : ""} onAnimationEnd={() => {
+                  sessionStorage.setItem('hasAnimated_profile', 'true');
+                  setHasAnimatedProfile(true);
+                }}>
                   <img src={profile} alt="" />
                 </div>}
             </TrackVisibility>

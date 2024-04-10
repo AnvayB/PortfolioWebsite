@@ -84,7 +84,7 @@ function Skills() {
                     progress="65"
                     height={30}
                   />
-                  <h5>Postman</h5>
+                  <h5>Postman<br />& Insomnia</h5>
                 </div>
                 <div className="item">
                 <ProgressBar
@@ -94,6 +94,7 @@ function Skills() {
                     height={30}
                   />
                   <h5>WordPress</h5>
+                  <p>+ Plugin Integrations</p>
                 </div>
                 <div className="item">
                 <ProgressBar
