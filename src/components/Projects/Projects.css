@@ -58,7 +58,9 @@ p .stack {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
+  background: linear-gradient(90.21deg, #ba6780 -5.91%, #463e6f 111.58%);
+
   top: 0;
   left: 0;
   z-index: -1;
@@ -101,6 +103,8 @@ p .stack {
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  /* background: linear-gradient(90.21deg, #ba6780 1%, #463e6f 100%); */
+
   opacity: 0.85;
   position: absolute;
   width: 100%;
