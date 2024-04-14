@@ -57,7 +57,7 @@ export const workexp = [
 export const projects = [
   {
     title: "Bookshelf Builder",
-    description: "Books Manager",
+    description: "Dynamic Book Management App",
     stack: "MERN Stack, Google API",
     image: bookshelf,
     duration: "Mar. 2024 - Present",
@@ -91,7 +91,7 @@ export const projects = [
   },
   {
     title: "iSky",
-    description: "Travel Planning app (React)",
+    description: "Vacation Planner",
     image: isky,
     stack: "React, various APIs",
     duration: "Aug. 2021 - May 2022",
