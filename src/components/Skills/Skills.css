@@ -49,3 +49,11 @@
   width: 40%;
   z-index: -4;
 }
+
+.background-image-right {
+  top: 25%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
