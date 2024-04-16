@@ -3,11 +3,17 @@ dark: #463e6f
 light: #ba6780
 */
 
+/* new dark: 4a3d7e
+   new light: b96186
+ */
+
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
   /* background-image: url('../../assets/img/banner-bg.png'); */
-  background-image: url('../../assets/img/bg1.jpeg');
+  /* background-image: url('../../assets/img/bg1.jpeg'); */
+
+  background-image: url('../../assets/img/bg1-2.jpg');
 
   background-position: top center;
   background-size: cover;
@@ -20,6 +26,8 @@ light: #ba6780
   border-radius: 15px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  /* background: linear-gradient(90.21deg, #b96186 -5.91%, #4a3d7e 111.58%); */
+
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;

@@ -1,13 +1,14 @@
 .contact {
   min-height: 90vh;
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #a74981 -5.91%, #4b399a 111.58%);
+  /* background: linear-gradient(90.21deg, #b96186 -5.91%, #4a3d7e 111.58%); */
+
   
 }
 
 .contact .connect {
   padding: 15vh 0 1vh 0;
   flex-grow: 1;
-  
 }
 
 .contact img {

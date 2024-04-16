@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../assets/img/contact-img.svg";
+import contact from '../../assets/img/contact.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Contact.css'
@@ -41,21 +42,21 @@ function Contact() {
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
-              {({ isVisible }) =>
+              {/* {({ isVisible }) => */}
                 <img
                   // className={isVisible ? "animate__animated animate__zoomIn" : ""} 
-                  src={contactImg} alt="Contact Us"
+                  src={contact} alt="Contact Us"
                 // onAnimationEnd={() => {
                 //   sessionStorage.setItem('hasAnimated_portfolio', 'true');
                 //   setHasAnimatedPortfolio(true);
                 // }}
                 />
-              }
+              {/* } */}
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>
-              {({ isVisible }) =>
+              {/* {({ isVisible }) => */}
                 <div
                 // className={isVisible ? "animate__animated animate__fadeIn" : ""} 
                 // onAnimationEnd={() => {
@@ -78,7 +79,8 @@ function Contact() {
                       </Col>
                     </Row>
                   </form>
-                </div>}
+                </div>
+                {/* } */}
             </TrackVisibility>
           </Col>
         </Row>
