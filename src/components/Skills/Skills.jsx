@@ -1,10 +1,5 @@
-// import meter1 from "../../assets/img/meter1.svg";
-// import meter2 from "../../assets/img/meter2.svg";
-// import meter3 from "../../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-// import arrow1 from "../assets/img/arrow1.svg";
-// import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../../assets/img/color-sharp.png"
 import colorSharp2 from "../../assets/img/color-sharp2.png"
 import ProgressBar from "./ProgressBar";
@@ -37,7 +32,6 @@ function Skills() {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              {/*  */}
               <br />
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
@@ -51,7 +45,7 @@ function Skills() {
                   <p>+ HTML, CSS, JavaScript</p>
                 </div>
                 <div className="item">
-                <ProgressBar
+                  <ProgressBar
                     className="bar"
                     bgcolor="#d1e231"
                     progress="75"
@@ -61,7 +55,7 @@ function Skills() {
                   <p> MongoDB, Express, React, Node </p>
                 </div>
                 <div className="item">
-                <ProgressBar
+                  <ProgressBar
                     className="bar"
                     bgcolor="#d1e231"
                     progress="60"
@@ -70,7 +64,7 @@ function Skills() {
                   <h5>Python</h5>
                 </div>
                 <div className="item">
-                <ProgressBar
+                  <ProgressBar
                     className="bar"
                     bgcolor="green"
                     progress="85"
@@ -79,7 +73,7 @@ function Skills() {
                   <h5>Git/GitHub</h5>
                 </div>
                 <div className="item">
-                <ProgressBar
+                  <ProgressBar
                     className="bar"
                     bgcolor="#d1e231"
                     progress="65"
@@ -88,7 +82,7 @@ function Skills() {
                   <h5>Postman<br />& Insomnia</h5>
                 </div>
                 <div className="item">
-                <ProgressBar
+                  <ProgressBar
                     className="bar"
                     bgcolor="green"
                     progress="83"
@@ -98,7 +92,7 @@ function Skills() {
                   <p>+ Plugin Integrations</p>
                 </div>
                 <div className="item">
-                <ProgressBar
+                  <ProgressBar
                     className="bar"
                     bgcolor="green"
                     progress="80"
@@ -107,7 +101,7 @@ function Skills() {
                   <h5>Adobe Photoshop <br />& Lightroom</h5>
                 </div>
                 <div className="item">
-                <ProgressBar
+                  <ProgressBar
                     className="bar"
                     bgcolor="green"
                     progress="80"
@@ -116,7 +110,7 @@ function Skills() {
                   <h5>Responsive Design <br />& Accessibility</h5>
                 </div>
                 <div className="item">
-                <ProgressBar
+                  <ProgressBar
                     className="bar"
                     bgcolor="green"
                     progress="90"
@@ -130,9 +124,8 @@ function Skills() {
         </div>
       </div>
       <img className="background-image-left" src={colorSharp}
-       alt="Image" />
+        alt="Image" />
       <img className="background-image-right" src={colorSharp2} alt='img2' />
-       
     </section>
   )
 }

@@ -11,12 +11,10 @@ function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  // const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [delta, setDelta] = useState(200);
   const [index, setIndex] = useState(1);
   const toRotate = ["Software Engineer", "Frontend Engineer", "Web Developer"];
   const period = 2000;
-  // 
   const [hasAnimatedPortfolio, setHasAnimatedPortfolio] = useState(false);
   const [hasAnimatedProfile, setHasAnimatedProfile] = useState(false);
 

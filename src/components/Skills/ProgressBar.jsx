@@ -9,7 +9,6 @@ const ProgressBar = ({ bgcolor, progress, height }) => {
     backgroundColor: 'whitesmoke',
     borderRadius: 40,
     margin: 50,
-    // rotate: '-90deg'
   }
 
   const Childdiv = {
