@@ -36,7 +36,7 @@ export const workexp = [
     description: "Web Development Intern",
     image: prismatic,
     duration: "Jun. 2022 - Aug. 2022",
-    link: "https://www.prissoft.net/"
+    link: "https://www.linkedin.com/company/prismatic-softwares-private-limited/"
   },
   {
     title: "RippleMatch",
