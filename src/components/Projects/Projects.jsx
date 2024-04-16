@@ -14,11 +14,11 @@ function Projects() {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
+              {/* {({ isVisible }) => */}
               <div 
               // className={isVisible ? "animate__animated animate__fadeIn": ""}
               >
-                <h2>Projects</h2>
+                <h2>Experience</h2>
                 <p></p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
@@ -84,7 +84,8 @@ function Projects() {
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
-              </div>}
+              </div>
+              {/* } */}
             </TrackVisibility>
           </Col>
         </Row>

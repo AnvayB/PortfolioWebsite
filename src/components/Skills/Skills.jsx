@@ -103,7 +103,7 @@ function Skills() {
                     progress="80"
                     height={30}
                   />
-                  <h5>Adobe Photoshop</h5>
+                  <h5>Adobe Photoshop <br />& Lightroom</h5>
                 </div>
                 <div className="item">
                 <ProgressBar
