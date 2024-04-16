@@ -14,10 +14,7 @@ function Projects() {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {/* {({ isVisible }) => */}
-              <div 
-              // className={isVisible ? "animate__animated animate__fadeIn": ""}
-              >
+              <div>
                 <h2>Experience</h2>
                 <p></p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -31,13 +28,8 @@ function Projects() {
                     <Nav.Item>
                       <Nav.Link eventKey="third">Testimonials</Nav.Link>
                     </Nav.Item>
-                    {/* <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 4</Nav.Link>
-                    </Nav.Item> */}
                   </Nav>
-                  <Tab.Content id="slideInUp" 
-                  // className={isVisible ? "animate__animated animate__slideInUp" : ""}
-                  >
+                  <Tab.Content id="slideInUp">
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
@@ -46,37 +38,35 @@ function Projects() {
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
+                              />
                             )
                           })
                         }
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                    <Row>
+                      <Row>
                         {
                           projects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
-                                // just make these sections taller
-                                // tbh just copy the entire block from the og website for now
+                              />
                             )
                           })
                         }
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                    <Row>
+                      <Row>
                         {
                           reviews.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
+                              />
                             )
                           })
                         }
@@ -85,7 +75,6 @@ function Projects() {
                   </Tab.Content>
                 </Tab.Container>
               </div>
-              {/* } */}
             </TrackVisibility>
           </Col>
         </Row>

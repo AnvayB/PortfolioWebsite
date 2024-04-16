@@ -26,7 +26,7 @@ function Contact() {
     emailjs.sendForm(
       'service_5j2nazr',
       'template_2q6uc8b',
-      formRef.current, {publicKey: 'SZctaaxt7KKpSXd4C'}
+      formRef.current, { publicKey: 'SZctaaxt7KKpSXd4C' }
     )
       .then((result) => {
         console.log(result.text);
@@ -42,45 +42,28 @@ function Contact() {
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
-              {/* {({ isVisible }) => */}
-                <img
-                  // className={isVisible ? "animate__animated animate__zoomIn" : ""} 
-                  src={contact} alt="Contact Us"
-                // onAnimationEnd={() => {
-                //   sessionStorage.setItem('hasAnimated_portfolio', 'true');
-                //   setHasAnimatedPortfolio(true);
-                // }}
-                />
-              {/* } */}
+              <img src={contact} alt="Contact Us" />
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>
-              {/* {({ isVisible }) => */}
-                <div
-                // className={isVisible ? "animate__animated animate__fadeIn" : ""} 
-                // onAnimationEnd={() => {
-                //   sessionStorage.setItem('hasAnimated_portfolio', 'true');
-                //   setHasAnimatedPortfolio(true);
-                // }}
-                >
-                  <h2>Get In Touch</h2>
-                  <form ref={formRef} onSubmit={handleSubmit}>
-                    <Row>
-                      <Col size={12} sm={6} className="px-1">
-                        <input type="text" placeholder='Full Name' name='user_name' />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input type="email" placeholder='Email' name='user_email' />
-                      </Col>
-                      <Col size={12} className="px-1">
-                        <textarea placeholder='Message' name='message' rows="5" onChange={handleChange} value={message}></textarea>
-                        <button type="submit" onClick={() => msgConfirm()} ><span>Submit</span></button> {thanks && <span className="msg" style={{ position: 'relative', left: '45%' }}>Thanks for the message!</span>}
-                      </Col>
-                    </Row>
-                  </form>
-                </div>
-                {/* } */}
+              <div>
+                <h2>Get In Touch</h2>
+                <form ref={formRef} onSubmit={handleSubmit}>
+                  <Row>
+                    <Col size={12} sm={6} className="px-1">
+                      <input type="text" placeholder='Full Name' name='user_name' />
+                    </Col>
+                    <Col size={12} sm={6} className="px-1">
+                      <input type="email" placeholder='Email' name='user_email' />
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <textarea placeholder='Message' name='message' rows="5" onChange={handleChange} value={message}></textarea>
+                      <button type="submit" onClick={() => msgConfirm()} ><span>Submit</span></button> {thanks && <span className="msg" style={{ position: 'relative', left: '45%' }}>Thanks for the message!</span>}
+                    </Col>
+                  </Row>
+                </form>
+              </div>
             </TrackVisibility>
           </Col>
         </Row>

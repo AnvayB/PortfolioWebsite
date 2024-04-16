@@ -30,10 +30,6 @@
   position: relative;
 }
 
-/* .skill-slider .item:hover {
-  border: red 2px solid;
-} */
-
 .skill-slider .item .bar {
   width: 100%;
 }
