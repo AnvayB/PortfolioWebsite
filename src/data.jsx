@@ -60,26 +60,18 @@ export const projects = [
     description: "Dynamic Book Management App",
     stack: "MERN Stack, Google API",
     image: bookshelf,
-    duration: "Mar. 2024 - Present",
+    duration: "Mar. 2024 - Apr. 2024",
     link: "https://github.com/AnvayB/Bookshelf-Editor"
     // How do you deploy a MERN app that needs a server running?
   },
   // Add portfolio as a project when complete
   {
     title: "GPT-Chatbot",
-    description: "Modifiable OpenAI Chatbot",
+    description: "Customizable OpenAI Chatbot",
     stack: "React, OpenAI API",
     image: chatbot,
-    duration: "Feb 2024 - Present",
+    duration: "Feb 2024 - Apr. 2024",
     link: "https://github.com/AnvayB/GPT-Chatbot"
-  },
-  {
-    title: "Clim8",
-    description: "Weather app",
-    image: clim8,
-    stack: "React, weather API",
-    duration: "Jan. 2024 - Present",
-    link: "https://clim8.netlify.app/"
   },
   {
     title: "HR Portal",
@@ -90,8 +82,16 @@ export const projects = [
     link: "https://github.com/HRPortal-Anvay/recaptchav1"
   },
   {
+    title: "Clim8",
+    description: "Standard Weather App",
+    image: clim8,
+    stack: "React, weather API",
+    duration: "Feb. 2022 - Mar. 2022",
+    link: "https://clim8.netlify.app/"
+  },
+  {
     title: "iSky",
-    description: "Vacation Planner",
+    description: "Comprehensive Vacation Planner",
     image: isky,
     stack: "React, various APIs",
     duration: "Aug. 2021 - May 2022",

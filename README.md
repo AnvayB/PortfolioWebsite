@@ -18,3 +18,8 @@ View the deployed site [here](https://anvayb.netlify.app/)
 - react-bootstrap@2.4.0
 - react-multi-carousel@2.8.1
 - react-on-screen@2.1.1
+
+
+<!-- Next Goals: -->
+<!-- Add lazy loading fade in feature for Exp and Contact components (use localStorage for first time animation) -->
+<!-- Add a better Contact image! -->
