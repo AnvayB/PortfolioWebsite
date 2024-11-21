@@ -13,7 +13,7 @@ function App() {
     const hasShownAlert = sessionStorage.getItem('hasShownAlert');
     
     if (!hasShownAlert) {
-      alert("This website is not yet updated to my recent academic development:\n- Starting a Masters in Data Analytics at SJSU.\n\nPlease refer to my GitHub or LinkedIn for an updated status of my skills.\nThank you.");
+      alert("This website is not yet updated to my recent academic development:\n- Starting a Masters in Data Analytics at SJSU.\n\nPlease refer to my GitHub or LinkedIn for an updated status of my skills.\nThank you!");
       // Mark alert as shown
       sessionStorage.setItem('hasShownAlert', 'true');
     }
