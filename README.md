@@ -3,7 +3,7 @@
 # My Portfolio Website
 This is my new and improved Portfolio Website that has a smoother layout, faster loading times, and more seamless and refined visuals.
 
-View the deployed site [here](https://anvayb.netlify.app/)
+
 
 ## Stack
 - React v18.1 + Vite v5.2
